@@ -70,6 +70,15 @@ public class AntianLayanan {
             data[index].tampilkanData();
         }
     }
+    public void lihatAkhir() {
+        if (isEmpty()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.println("Mahasiswa di akhir antrian: ");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
+        }
+    }
     public int getJumlahAntrian(){
         return size;
     }
